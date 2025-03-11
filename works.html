@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品 | 芸術家のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>あなたの名前</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="works.html" class="active">作品</a></li>
+                <li><a href="about.html">プロフィール</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gallery" class="gallery page-section">
+        <h2>作品ギャラリー</h2>
+        
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-category="all">すべて</button>
+            <button class="filter-btn" data-category="painting">絵画</button>
+            <button class="filter-btn" data-category="photo">写真</button>
+            <button class="filter-btn" data-category="sculpture">立体</button>
+        </div>
+        
+        <div class="gallery-container">
+            <div class="gallery-item" data-category="painting">
+                <img src="images/work1.jpg" alt="作品1の説明">
+                <div class="overlay">
+                    <h3>作品タイトル1</h3>
+                    <p>油彩 | 100cm×80cm | 2023年</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="painting">
+                <img src="images/work2.jpg" alt="作品2の説明">
+                <div class="overlay">
+                    <h3>作品タイトル2</h3>
+                    <p>アクリル | 60cm×45cm | 2023年</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <img src="images/work3.jpg" alt="作品3の説明">
+                <div class="overlay">
+                    <h3>作品タイトル3</h3>
+                    <p>写真 | 2024年</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <img src="images/work4.jpg" alt="作品4の説明">
+                <div class="overlay">
+                    <h3>作品タイトル4</h3>
+                    <p>写真 | 2024年</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="sculpture">
+                <img src="images/work5.jpg" alt="作品5の説明">
+                <div class="overlay">
+                    <h3>作品タイトル5</h3>
+                    <p>石膏 | 30cm×20cm×15cm | 2022年</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="sculpture">
+                <img src="images/work6.jpg" alt="作品6の説明">
+                <div class="overlay">
+                    <h3>作品タイトル6</h3>
+                    <p>ブロンズ | 40cm×25cm×20cm | 2023年</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 あなたの名前. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Behance</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
