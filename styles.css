@@ -506,3 +506,21 @@ footer {
         flex-direction: column;
     }
 }
+/* ナビゲーションの現在のページ表示を改善 */
+nav ul li a.active {
+    color: #000; /* 黒色に変更（塗りつぶしではなく文字色） */
+    font-weight: 600; /* 少し太字に */
+    position: relative;
+}
+
+/* 下線スタイルを追加 */
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    width: 100%; /* 下線の幅を100%に */
+    height: 2px; /* 下線の高さ */
+    bottom: -5px;
+    left: 0;
+    background-color: #000; /* 下線の色 */
+    transition: width 0.3s ease;
+}
